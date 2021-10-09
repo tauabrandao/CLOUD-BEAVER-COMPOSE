@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  cloud-beaver:
+    image: dbeaver/cloudbeaver:21.1.4
+    container_name: cloud-beaver
+    ports:
+      - 8978:8978
+    volumes:
+      - ./vol/cloud-beaver:/opt/cloudbeaver/workspace
